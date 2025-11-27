@@ -1,9 +1,8 @@
 exclude:
-  # Exclude the Astro source directory so GitHub Pages (Jekyll) doesn't try to parse .astro files
+  # 排除 Astro 源码目录，避免 Jekyll 解析 .astro 文件报错
   - src
   - node_modules
-  - public
-  - dist
+  - public  # 可选：public 是 Astro 静态资源目录，构建后会被合并到 dist，排除也可
   - scripts
   - package.json
   - package-lock.json
@@ -13,4 +12,4 @@ exclude:
   - astro.config.mjs
   - tailwind.config.mjs
   - vite.config.mjs
-
+# 重点：删掉 - dist！！！
